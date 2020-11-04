@@ -1,0 +1,163 @@
+@include rwd($phone) {
+  .fork-pricing {
+    background: #4B3B4E;
+    text-align: center;
+    padding-top: 71px;
+    @include clear;
+  
+    &__title {
+      @include fontMontBold;
+      display: inline-block;
+      line-height: 1.5;
+      width: 257px;
+      font-size: 21px;
+      color: $color;
+  
+    }
+    &__products-table {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+  .product-card {
+    margin-top: 14px;
+    width: 85%;
+    height: 457px;
+    background-color: rgba(95, 81, 97, 0.5);
+    color: $color;
+    font-family: $ffM;
+    text-transform: uppercase;
+    &__title {
+      padding-top: 46px;
+      padding-bottom: 34px;
+      background-color: rgba(104, 91, 106, 0.3);
+      font-size: 18px;
+  
+      &--active {
+        padding-top: 51px;
+        padding-bottom: 43px;
+        background-color: rgba(57, 45, 61, 0.5);
+      }
+    }
+    &__price {
+      padding-top: 32px;
+      @include fontMontBold;
+      font-size: 48px;
+  
+      &--value {
+        font-weight: normal;
+      }
+  
+      &--active {
+        font-size: 66px;
+      }
+    }
+    &__price-period {
+      font-size: 11px;
+      padding-top: 24px;
+      color: #827784;
+      text-transform: uppercase;
+    }
+  
+    &__divider {
+      display: inline-block;
+      margin-top: 39px;
+      margin-bottom: 31px;
+      width: 60px;
+      height: 5px;
+      background-color: $akcentColor;
+    }
+  
+    &__text {
+      height: 48px;
+      font-size: 12px;
+      line-height: 2;
+      text-transform: none;
+    }
+  
+    &__btn {
+      margin-top: 40px;
+      width: 160px;
+      padding: 16px 0;
+      cursor: pointer;
+      font-size: 12px;
+      text-transform: uppercase;
+      color: $color;
+      font-weight: normal;
+      background-color: #776B79;
+      border: 0 solid #776B79;
+      border-radius: 21px;
+
+      &:hover {
+        @include btn-hover;
+      }
+  
+      &--active {
+        margin-top: 80px;
+      }
+    }
+  
+    &:last-child {
+        margin-bottom: 93px;
+      }
+  
+    &-active {
+      width: 95%;
+      //max-width: 299px;
+      height: 560px;
+      background-color: rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+@include rwd($tablet) {
+  .fork-pricing {
+    background: url("../../dist/img/price-bg.jpg") top center no-repeat;
+    background-size: cover;
+    height: 100%;
+    &__title {
+      font-size: 31px;
+      width: 100%;
+    }
+    &__products-table {
+      flex-direction: row;
+      flex-wrap: wrap;
+      padding: 50px 5% 70px 5%;
+    }
+  }
+  .product-card {
+    width: 45%;
+    margin-right: 10px;
+    margin-left: 10px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &-active {
+      width: 45%;
+    }
+  }
+}
+
+@include rwd($laptop) {
+  .fork-pricing {
+    &__title {
+      font-size: 35px;
+    }
+    &__products-table {
+      padding: 70px 0 100px 0;
+    }
+  }
+  .product-card {
+    width: 23%;
+    margin-right: 7px;
+    margin-left: 7px;
+    &:last-child {
+      margin-bottom: 0;
+    }
+    &-active {
+     width: 23%;
+    }
+  }
+}

@@ -1,0 +1,92 @@
+
+.present {
+    text-align: center;
+    background: $color;
+    border-top: $color;
+    &__trial {
+        margin-top: 40px;
+        color: #848E97;
+        font-family: $ffM;
+        font-size: 14px;
+    }
+  
+    &__title {
+      padding-top: 72px;
+      padding-bottom: 23px;
+      font-size: 19px;
+      text-transform: uppercase;
+      line-height: 1.5;
+      @include fontMontBold;
+      color: #635C73;
+      @include rwd($tablet) {
+        font-size: 31px;
+      }
+      @include rwd($desktop) {
+        font-size: 40px;
+      }
+    }
+  
+    &__text {
+      margin-bottom: 34px;
+      padding: 0 10px;
+      font-size: 10px;
+      color: #5B5B5B;
+      font-family: $ffL;
+      @include rwd($tablet) {
+        font-size: 15px;
+      }
+    }
+  }
+  
+  .social-links {
+    @include flex-wrap;
+    justify-content: center;
+    padding-bottom: 90px;
+  
+    &__social-link {
+      margin: 0 6px;
+      padding-bottom: 20px;
+    }
+  }
+  
+  .btn {
+    position: relative;
+    cursor: pointer;
+    padding: 3px 12px;
+    font-size: 12px;
+    line-height: 20px;
+    @include fontMontBold;
+    color: #24292e;
+    background-color: #fafbfc;
+    border: 1px solid rgba(27,31,35,.15);
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    box-shadow: 0 1px 0 rgba(27,31,35,.04), inset 0 1px 0 hsla(0,0%,100%,.25);
+    transition: background-color .2s cubic-bezier(.3,0,.5,1);
+    }
+  
+  .octicon {
+    vertical-align: text-top;
+  }
+  
+  .btn-text {
+    display: inline-block;
+  }
+  
+  .social-count {
+    box-sizing: border-box;
+    position: relative;
+    padding: 3px 12px;
+    text-decoration: none;
+    font-size: 12px;
+    @include fontMontBold;
+    line-height: 20px;
+    color: #24292e;
+    vertical-align: center;
+    background-color: #fff;
+    border: 1px solid rgba(27,31,35,.15);
+    border-left: 0;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+    box-shadow: 0 1px 0 rgba(27,31,35,.04), inset 0 1px 0 hsla(0,0%,100%,.25);
+  }

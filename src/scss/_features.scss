@@ -1,0 +1,107 @@
+@include rwd($phone) {
+  .features {
+    &__wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+    background-color: #F4F4F4;
+    &__title2 {
+      display: none;
+    }
+    &__img {
+      margin-top: 60px;
+      overflow-x: hidden;
+    }
+    &__title, &__title2 {
+      align-self: center;
+      padding-top: 34px;
+      color: $akcentColor;
+      font-size: 23px;
+      @include fontMontBold;
+      @include rwd($tablet) {
+        font-size: 31px;
+      }
+      @include rwd($desktop) {
+        font-size: 35px;
+      }
+    }
+  
+    &__title:before, &__title2:before {
+      content: '<';
+    }
+  
+    &__title:after, &__title2:after {
+      content: '>';
+    }
+    &__block {
+      @include flex-wrap;
+      justify-content: center;
+      margin-top: 34px;
+      padding: 0 10px;
+      &__img {
+        align-self: center;
+      }
+      &__desc {
+        text-align: center;
+      }
+      &__title {
+        margin: 25px 0 20px 0;
+        color: #323232;
+        font-family: $ffM;
+      }
+      &__text {
+        font-family: $ffL;
+        font-size: 14px;
+        color: #848E97;
+      }
+    }
+  }
+}
+
+@include rwd($tablet) {
+  .features {
+    .container {
+      margin: 0 0 0 2%;
+      padding: 0;
+    }
+    &__part2 {
+      text-align: center;
+    }
+    &__block {
+      justify-content: space-around;
+      &__desc {
+        text-align: left;
+        width: 70%;
+      }
+      &__text {
+        font-size: 16px;
+      }
+    }
+  }
+}
+
+@include rwd($laptop) {
+  .features {
+    padding: 30px 0;
+    &__title {
+      display: none;
+    }
+    &__title2 {
+      display: block;
+      padding: 0;
+      margin-top: 34px;
+    }
+    &__img {
+      margin: 30px -300px 0 0;
+    }
+    &__wrapper {
+      flex-direction: row;
+    }
+    &__part1 {
+      width: 60%;
+    }
+    &__block {
+      margin: 10px 0 0 5%;
+    }
+  }
+}

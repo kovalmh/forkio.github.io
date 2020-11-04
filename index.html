@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="dist/js/script.min.js"></script>
+    <link rel="stylesheet" href="dist/css/style.min.css" />
+    <title>Step project Forkio</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__top-bar">
+        <div class="container">
+            <div class="header__wrapper">
+              <div class="header__logo">
+                <a href="#" class="header__logo-img"></a>
+                <div class="header__logo-txt">Forkio</div>
+              </div>
+              <button class="header__burger"id="menuToggle" data-target="#burgerToggle">
+                  <div class="header__burger-line"></div>
+                  <div class="header__burger-line"></div>
+                  <div class="header__burger-line"></div>
+                </button>
+              <nav class="header__navbar" id="burgerToggle">
+                <ul class="header__menu-list">
+                  <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">Overview</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">About Fork</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">Buying Options</a>
+                  </li>
+                  <li class="header__menu-item">
+                    <a href="#" class="header__menu-link">Support</a>
+                  </li>
+                </ul>
+              </nav>
+              <button class="header__buy-btn">Buy Now</button>
+            </div>
+        </div>
+      </div>
+      <div class="header__main-content">
+        <div class="container">
+          <h1 class="header__main-header">Fork App</h1>
+          <p class="header__main-txt">
+          A Real Gamechanger In The World Of Web-Development
+          </p>
+          <p class="header__app-version">v. 2.8 For Mac and Windows</p>
+          <button class="header__dwld-btn">Download For Free Now</button>
+        </div>
+      </div>
+    </header>
+    <main class="main">
+      <section class="present">
+        <div class="container">
+            <p class="present__trial">Unlimited 30-Days Trial Period</p>
+            <h2 class="present__title">Revolutionary editor</h2>
+            <p class="present__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.
+            </p>
+
+            <div class="social-links">
+                <div class="social-links__social-link social-link">
+                    <a class="btn">
+                        <svg class="octicon octicon-eye" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M1.679 7.932c.412-.621 1.242-1.75 2.366-2.717C5.175 4.242 6.527 3.5 8 3.5c1.473 0 2.824.742 3.955 1.715 1.124.967 1.954 2.096 2.366 2.717a.119.119 0 010 .136c-.412.621-1.242 1.75-2.366 2.717C10.825 11.758 9.473 12.5 8 12.5c-1.473 0-2.824-.742-3.955-1.715C2.92 9.818 2.09 8.69 1.679 8.068a.119.119 0 010-.136zM8 2c-1.981 0-3.67.992-4.933 2.078C1.797 5.169.88 6.423.43 7.1a1.619 1.619 0 000 1.798c.45.678 1.367 1.932 2.637 3.024C4.329 13.008 6.019 14 8 14c1.981 0 3.67-.992 4.933-2.078 1.27-1.091 2.187-2.345 2.637-3.023a1.619 1.619 0 000-1.798c-.45-.678-1.367-1.932-2.637-3.023C11.671 2.992 9.981 2 8 2zm0 8a2 2 0 100-4 2 2 0 000 4z"></path></svg>
+                        <span class="btn-text">Watch</span>
+                        <a class="social-count" href="#">1397</a>
+                    </a>
+                </div>
+                <div class="social-links__social-link social-link">
+                <a class="btn">
+                    <svg class="octicon octicon-star" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M8 .25a.75.75 0 01.673.418l1.882 3.815 4.21.612a.75.75 0 01.416 1.279l-3.046 2.97.719 4.192a.75.75 0 01-1.088.791L8 12.347l-3.766 1.98a.75.75 0 01-1.088-.79l.72-4.194L.818 6.374a.75.75 0 01.416-1.28l4.21-.611L7.327.668A.75.75 0 018 .25zm0 2.445L6.615 5.5a.75.75 0 01-.564.41l-3.097.45 2.24 2.184a.75.75 0 01.216.664l-.528 3.084 2.769-1.456a.75.75 0 01.698 0l2.77 1.456-.53-3.084a.75.75 0 01.216-.664l2.24-2.183-3.096-.45a.75.75 0 01-.564-.41L8 2.694v.001z"></path></svg>
+                    <span class="btn-text">Star</span>
+                    <a class="social-count" href="#">2103</a>
+                </a>
+                </div>
+                <div class="social-links__social-link social-link">
+                <a class="btn">
+                    <svg class="octicon octicon-repo-forked" viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><svg class="octicon octicon-repo-forked" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path fill-rule="evenodd" d="M5 3.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm0 2.122a2.25 2.25 0 10-1.5 0v.878A2.25 2.25 0 005.75 8.5h1.5v2.128a2.251 2.251 0 101.5 0V8.5h1.5a2.25 2.25 0 002.25-2.25v-.878a2.25 2.25 0 10-1.5 0v.878a.75.75 0 01-.75.75h-4.5A.75.75 0 015 6.25v-.878zm3.75 7.378a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm3-8.75a.75.75 0 100-1.5.75.75 0 000 1.5z"></path></svg></svg>
+                    <span class="btn-text">Fork</span>
+                    <a class="social-count" href="#">4391</a>
+                </a>
+                </div>
+            </div>
+        </div>
+      </section>
+      <section class="features">
+        <div class="container">
+          <div class="features__wrapper">
+            <h2 class="features__title">Here is what you get</h2>
+            <div class="features__part1">
+              <div class="features__block">
+                <img src="dist/img/feature-img-1.png" alt="img" class="features__block__img">
+                <div class="features__block__desc">
+                    <h3 class="features__block__title">Creatred to Make The Web Better</h3>
+                    <p class="features__block__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+                </div>
+              </div>
+              <div class="features__block">
+                <img src="dist/img/feature-img-2.png" alt="img" class="features__block__img">
+                <div class="features__block__desc">
+                    <h3 class="features__block__title">Creatred to Make The Web Better</h3>
+                    <p class="features__block__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+                </div>
+              </div>
+              <div class="features__block">
+                <img src="dist/img/feature-img-3.png" alt="img" class="features__block__img">
+                <div class="features__block__desc">
+                    <h3 class="features__block__title">Creatred to Make The Web Better</h3>
+                    <p class="features__block__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+                </div>
+              </div>
+              <div class="features__block">
+                <img src="dist/img/feature-img-4.png" alt="img" class="features__block__img">
+                <div class="features__block__desc">
+                    <h3 class="features__block__title">Creatred to Make The Web Better</h3>
+                    <p class="features__block__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+                </div>
+              </div>
+            </div>
+            <div class="features__part2">
+              <h2 class="features__title2">Here is what you get</h2>
+              <img src="dist/img/features-bg.png" class="features__img" alt="Features">
+            </div>
+        </div>
+      </section>
+      <section class="testimonials">
+        <div class="container">
+          <h2 class="testimonials__header">People Are Talking About Fork</h2>
+          <div class="testimonials__wrapper">
+            <div class="testimonials__block">
+              <div class="testimonials__img-container">
+                <img src="dist/img/smashing.png" class="testimonials__img" alt="Logo">
+              </div>
+              <p class="testimonials__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis.</p>
+            </div>
+            <div class="testimonials__block">
+              <div class="testimonials__img-container"><img src="dist/img/codrops.png" class="testimonials__img" alt="Logo"></div>
+              <p class="testimonials__text">Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.</p>
+            </div>
+            <div class="testimonials__block">
+              <div class="testimonials__img-container"><img src="dist/img/w.png" class="testimonials__img" alt="Logo"></div>
+              <p class="testimonials__text">In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. </p>
+            </div>
+            <div class="testimonials__block">
+              <div class="testimonials__img-container"><img src="dist/img/pixel buddha.png" class="testimonials__img" alt="Logo"></div>
+              <p class="testimonials__text">Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. </p>
+            </div>
+            <div class="testimonials__block">
+              <div class="testimonials__img-container"><img src="dist/img/creative bloq.png" class="testimonials__img" alt="Logo"></div>
+              <p class="testimonials__text">Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus. </p>
+            </div>
+            <div class="testimonials__block">
+              <div class="testimonials__img-container"><img src="dist/img/tnw.png" class="testimonials__img" alt="Logo"></div>
+              <p class="testimonials__text">Fusce pharetra erat id odio blandit, nec 
+                pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.</p>
+            </div>
+            <p class="testimonials__bottom-text">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+            <div class="testimonials__bottom-line"></div>
+          </div>
+        </div>
+      </section>
+      <section class="fork-pricing">
+        <div class="container">
+            <h2 class="fork-pricing__title">Fork Subscription Pricing</h2>
+            <div class="fork-pricing__products-table">
+                <div class="product-card">
+                    <h3 class="product-card__title">Students</h3>
+                    <p class="product-card__price"><span class="product-card__price--value">$</span>29</p>
+                    <p class="product-card__price-period">per month</p>
+                    <span class="product-card__divider"></span>
+                    <p class="product-card__text">Personal License</p>
+                    <button class="product-card__btn">purchase</button>
+                </div>
+                <div class="product-card">
+                    <h3 class="product-card__title">professional</h3>
+                    <p class="product-card__price"><span class="product-card__price--value">$</span>59</p>
+                    <p class="product-card__price-period">per month</p>
+                    <span class="product-card__divider"></span>
+                    <p class="product-card__text">Professional License <br>Email Support</p>
+                    <button class="product-card__btn">purchase</button>
+                </div>
+                <div class="product-card product-card-active">
+                    <h3 class="product-card__title product-card__title--active">agency</h3>
+                    <p class="product-card__price product-card__price--active"><span class="product-card__price--value">$</span>99</p>
+                    <p class="product-card__price-period">per month</p>
+                    <span class="product-card__divider"></span>
+                    <p class="product-card__text">1-12 Team Members <br>Phone Support</p>
+                    <button class="product-card__btn product-card__btn--active">purchase</button>
+                </div>
+                <div class="product-card">
+                    <h3 class="product-card__title">enterprise</h3>
+                    <p class="product-card__price"><span class="product-card__price--value">$</span>159</p>
+                    <p class="product-card__price-period">per month</p>
+                    <span class="product-card__divider"></span>
+                    <p class="product-card__text">Unlimited Team Members <br>24/7 Phone Support</p>
+                    <button class="product-card__btn">purchase</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    </main>
+ </body>
+</html>

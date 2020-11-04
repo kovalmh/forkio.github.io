@@ -1,0 +1,22 @@
+@mixin rwd($screenWidth) {
+  @if $screenWidth == phone {
+    @media screen and (min-width: $breakpointPhone) {
+      @content;
+    }
+  }
+  @if $screenWidth == tablet {
+    @media screen and (min-width: $breakpointTablet) {
+      @content;
+    }
+  }
+  @if $screenWidth == laptop {
+    @media screen and (min-width: $breakpointLaptop) {
+      @content;
+    }
+  }
+  @if $screenWidth == desktop {
+    @media screen and (min-width: $breakpointDesktop) {
+      @content;
+    }
+  }
+}

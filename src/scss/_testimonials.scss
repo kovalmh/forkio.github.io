@@ -1,0 +1,82 @@
+@include rwd($phone) {
+    .testimonials {
+        background: url("../../dist/img/testmonials-bg@1X.jpeg") top center no-repeat;
+        background-size: cover;
+        padding-top: 67px;
+        &__header {
+            text-align: center;
+            @include fontMontBold;
+            font-size: 26px;
+            color: $color;
+            padding: 0 25px;
+            line-height: 35px;
+        }
+        &__wrapper {
+            margin-top: 49px;
+            text-align: center;
+        }
+        &__block {
+            text-align: center;
+        }
+        &__img-container {
+            padding: 40px 0;
+        }
+        &__text {
+            color: $color;
+            padding: 0 20px;
+            line-height: 26px;
+            @include fontLatoBoldItalic;
+        }   
+        &__bottom-text {
+            display: none;
+        }   
+        &__bottom-line {
+            margin: 44px 5% 0 5%;
+            width: 90%;
+            border-bottom: 2px solid rgba($color: #A291A5, $alpha: 0.8);
+        } 
+    }
+}
+
+@include rwd($tablet) {
+    .testimonials {
+        &__header {
+            padding: 0;
+        }
+        &__wrapper {
+            @include flex-wrap;
+        }
+        &__block {
+            width: 50%;
+            &:nth-of-type(4) {
+                padding-top: 40px;
+            }
+        }
+        &__bottom-text {
+            display: block;
+            margin-top: 61px;
+            line-height: 26px;
+            font-family: $ffL;
+            opacity: 0.8;
+            color: #A291A5;
+            padding-bottom: 16px;
+        }   
+    }
+}
+
+@include rwd($laptop) {
+    .testimonials {
+        &__block {
+            width: 33%;
+            &:nth-of-type(4) {
+                padding: 0;
+            }
+        }
+        &__bottom-text {
+            margin: 61px 10% 0 10%;
+        }
+        &__bottom-line {
+            margin: 44px 10% 0 10%;
+        } 
+    }
+}
